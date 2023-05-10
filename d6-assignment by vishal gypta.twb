@@ -1,0 +1,1264 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20223.22.1108.0821                               -->
+<workbook original-version='18.1' source-build='2022.3.1 (20223.22.1108.0821)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='AdventureWorks_Customers+' inline='true' name='federated.1muz2pg08fknqy1ezt5mp13o6r1r' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='AdventureWorks_Customers' name='textscan.0lb6ogw0fpntah1c0qk3z053liky'>
+            <connection class='textscan' directory='C:/Users/Acer/Desktop/tableu/Adventure works' filename='AdventureWorks_Customers.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[AdventureWorks_Products.csv].[ProductSubcategoryKey]' />
+              <expression op='[AdventureWorks_Products.csv1].[ProductSubcategoryKey]' />
+            </expression>
+          </clause>
+          <relation connection='textscan.0lb6ogw0fpntah1c0qk3z053liky' name='AdventureWorks_Products.csv' table='[AdventureWorks_Products#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='ProductKey' ordinal='0' />
+              <column datatype='integer' name='ProductSubcategoryKey' ordinal='1' />
+              <column datatype='string' name='ProductSKU' ordinal='2' />
+              <column datatype='string' name='ProductName' ordinal='3' />
+              <column datatype='string' name='ModelName' ordinal='4' />
+              <column datatype='string' name='ProductDescription' ordinal='5' />
+              <column datatype='string' name='ProductColor' ordinal='6' />
+              <column datatype='string' name='ProductSize' ordinal='7' />
+              <column datatype='string' name='ProductStyle' ordinal='8' />
+              <column datatype='real' name='ProductCost' ordinal='9' />
+              <column datatype='real' name='ProductPrice' ordinal='10' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0lb6ogw0fpntah1c0qk3z053liky' name='AdventureWorks_Products.csv1' table='[AdventureWorks_Products#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='ProductKey' ordinal='0' />
+              <column datatype='integer' name='ProductSubcategoryKey' ordinal='1' />
+              <column datatype='string' name='ProductSKU' ordinal='2' />
+              <column datatype='string' name='ProductName' ordinal='3' />
+              <column datatype='string' name='ModelName' ordinal='4' />
+              <column datatype='string' name='ProductDescription' ordinal='5' />
+              <column datatype='string' name='ProductColor' ordinal='6' />
+              <column datatype='string' name='ProductSize' ordinal='7' />
+              <column datatype='string' name='ProductStyle' ordinal='8' />
+              <column datatype='real' name='ProductCost' ordinal='9' />
+              <column datatype='real' name='ProductPrice' ordinal='10' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation join='inner' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[AdventureWorks_Products.csv].[ProductSubcategoryKey]' />
+                <expression op='[AdventureWorks_Products.csv1].[ProductSubcategoryKey]' />
+              </expression>
+            </clause>
+            <relation connection='textscan.0lb6ogw0fpntah1c0qk3z053liky' name='AdventureWorks_Products.csv' table='[AdventureWorks_Products#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                <column datatype='integer' name='ProductKey' ordinal='0' />
+                <column datatype='integer' name='ProductSubcategoryKey' ordinal='1' />
+                <column datatype='string' name='ProductSKU' ordinal='2' />
+                <column datatype='string' name='ProductName' ordinal='3' />
+                <column datatype='string' name='ModelName' ordinal='4' />
+                <column datatype='string' name='ProductDescription' ordinal='5' />
+                <column datatype='string' name='ProductColor' ordinal='6' />
+                <column datatype='string' name='ProductSize' ordinal='7' />
+                <column datatype='string' name='ProductStyle' ordinal='8' />
+                <column datatype='real' name='ProductCost' ordinal='9' />
+                <column datatype='real' name='ProductPrice' ordinal='10' />
+              </columns>
+            </relation>
+            <relation connection='textscan.0lb6ogw0fpntah1c0qk3z053liky' name='AdventureWorks_Products.csv1' table='[AdventureWorks_Products#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                <column datatype='integer' name='ProductKey' ordinal='0' />
+                <column datatype='integer' name='ProductSubcategoryKey' ordinal='1' />
+                <column datatype='string' name='ProductSKU' ordinal='2' />
+                <column datatype='string' name='ProductName' ordinal='3' />
+                <column datatype='string' name='ModelName' ordinal='4' />
+                <column datatype='string' name='ProductDescription' ordinal='5' />
+                <column datatype='string' name='ProductColor' ordinal='6' />
+                <column datatype='string' name='ProductSize' ordinal='7' />
+                <column datatype='string' name='ProductStyle' ordinal='8' />
+                <column datatype='real' name='ProductCost' ordinal='9' />
+                <column datatype='real' name='ProductPrice' ordinal='10' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='textscan.0lb6ogw0fpntah1c0qk3z053liky' name='AdventureWorks_Sales_2015.csv' table='[AdventureWorks_Sales_2015#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='OrderDate' ordinal='0' />
+              <column datatype='date' name='StockDate' ordinal='1' />
+              <column datatype='string' name='OrderNumber' ordinal='2' />
+              <column datatype='integer' name='ProductKey' ordinal='3' />
+              <column datatype='integer' name='CustomerKey' ordinal='4' />
+              <column datatype='integer' name='TerritoryKey' ordinal='5' />
+              <column datatype='integer' name='OrderLineItem' ordinal='6' />
+              <column datatype='integer' name='OrderQuantity' ordinal='7' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0lb6ogw0fpntah1c0qk3z053liky' name='AdventureWorks_Sales_2016.csv' table='[AdventureWorks_Sales_2016#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='OrderDate' ordinal='0' />
+              <column datatype='date' name='StockDate' ordinal='1' />
+              <column datatype='string' name='OrderNumber' ordinal='2' />
+              <column datatype='integer' name='ProductKey' ordinal='3' />
+              <column datatype='integer' name='CustomerKey' ordinal='4' />
+              <column datatype='integer' name='TerritoryKey' ordinal='5' />
+              <column datatype='integer' name='OrderLineItem' ordinal='6' />
+              <column datatype='integer' name='OrderQuantity' ordinal='7' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0lb6ogw0fpntah1c0qk3z053liky' name='AdventureWorks_Sales_2017.csv' table='[AdventureWorks_Sales_2017#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='date' name='OrderDate' ordinal='0' />
+              <column datatype='date' name='StockDate' ordinal='1' />
+              <column datatype='string' name='OrderNumber' ordinal='2' />
+              <column datatype='integer' name='ProductKey' ordinal='3' />
+              <column datatype='integer' name='CustomerKey' ordinal='4' />
+              <column datatype='integer' name='TerritoryKey' ordinal='5' />
+              <column datatype='integer' name='OrderLineItem' ordinal='6' />
+              <column datatype='integer' name='OrderQuantity' ordinal='7' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[CustomerKey (AdventureWorks_Sales_2016.csv)]' value='[AdventureWorks_Sales_2016.csv].[CustomerKey]' />
+          <map key='[CustomerKey (AdventureWorks_Sales_2017.csv)]' value='[AdventureWorks_Sales_2017.csv].[CustomerKey]' />
+          <map key='[CustomerKey]' value='[AdventureWorks_Sales_2015.csv].[CustomerKey]' />
+          <map key='[ModelName (AdventureWorks_Products.csv1)]' value='[AdventureWorks_Products.csv1].[ModelName]' />
+          <map key='[ModelName]' value='[AdventureWorks_Products.csv].[ModelName]' />
+          <map key='[OrderDate (AdventureWorks_Sales_2016.csv)]' value='[AdventureWorks_Sales_2016.csv].[OrderDate]' />
+          <map key='[OrderDate (AdventureWorks_Sales_2017.csv)]' value='[AdventureWorks_Sales_2017.csv].[OrderDate]' />
+          <map key='[OrderDate]' value='[AdventureWorks_Sales_2015.csv].[OrderDate]' />
+          <map key='[OrderLineItem (AdventureWorks_Sales_2016.csv)]' value='[AdventureWorks_Sales_2016.csv].[OrderLineItem]' />
+          <map key='[OrderLineItem (AdventureWorks_Sales_2017.csv)]' value='[AdventureWorks_Sales_2017.csv].[OrderLineItem]' />
+          <map key='[OrderLineItem]' value='[AdventureWorks_Sales_2015.csv].[OrderLineItem]' />
+          <map key='[OrderNumber (AdventureWorks_Sales_2016.csv)]' value='[AdventureWorks_Sales_2016.csv].[OrderNumber]' />
+          <map key='[OrderNumber (AdventureWorks_Sales_2017.csv)]' value='[AdventureWorks_Sales_2017.csv].[OrderNumber]' />
+          <map key='[OrderNumber]' value='[AdventureWorks_Sales_2015.csv].[OrderNumber]' />
+          <map key='[OrderQuantity (AdventureWorks_Sales_2016.csv)]' value='[AdventureWorks_Sales_2016.csv].[OrderQuantity]' />
+          <map key='[OrderQuantity (AdventureWorks_Sales_2017.csv)]' value='[AdventureWorks_Sales_2017.csv].[OrderQuantity]' />
+          <map key='[OrderQuantity]' value='[AdventureWorks_Sales_2015.csv].[OrderQuantity]' />
+          <map key='[ProductColor (AdventureWorks_Products.csv1)]' value='[AdventureWorks_Products.csv1].[ProductColor]' />
+          <map key='[ProductColor]' value='[AdventureWorks_Products.csv].[ProductColor]' />
+          <map key='[ProductCost (AdventureWorks_Products.csv1)]' value='[AdventureWorks_Products.csv1].[ProductCost]' />
+          <map key='[ProductCost]' value='[AdventureWorks_Products.csv].[ProductCost]' />
+          <map key='[ProductDescription (AdventureWorks_Products.csv1)]' value='[AdventureWorks_Products.csv1].[ProductDescription]' />
+          <map key='[ProductDescription]' value='[AdventureWorks_Products.csv].[ProductDescription]' />
+          <map key='[ProductKey (AdventureWorks_Products.csv1)]' value='[AdventureWorks_Products.csv1].[ProductKey]' />
+          <map key='[ProductKey (AdventureWorks_Sales_2015.csv)]' value='[AdventureWorks_Sales_2015.csv].[ProductKey]' />
+          <map key='[ProductKey (AdventureWorks_Sales_2016.csv)]' value='[AdventureWorks_Sales_2016.csv].[ProductKey]' />
+          <map key='[ProductKey (AdventureWorks_Sales_2017.csv)]' value='[AdventureWorks_Sales_2017.csv].[ProductKey]' />
+          <map key='[ProductKey]' value='[AdventureWorks_Products.csv].[ProductKey]' />
+          <map key='[ProductName (AdventureWorks_Products.csv1)]' value='[AdventureWorks_Products.csv1].[ProductName]' />
+          <map key='[ProductName]' value='[AdventureWorks_Products.csv].[ProductName]' />
+          <map key='[ProductPrice (AdventureWorks_Products.csv1)]' value='[AdventureWorks_Products.csv1].[ProductPrice]' />
+          <map key='[ProductPrice]' value='[AdventureWorks_Products.csv].[ProductPrice]' />
+          <map key='[ProductSKU (AdventureWorks_Products.csv1)]' value='[AdventureWorks_Products.csv1].[ProductSKU]' />
+          <map key='[ProductSKU]' value='[AdventureWorks_Products.csv].[ProductSKU]' />
+          <map key='[ProductSize (AdventureWorks_Products.csv1)]' value='[AdventureWorks_Products.csv1].[ProductSize]' />
+          <map key='[ProductSize]' value='[AdventureWorks_Products.csv].[ProductSize]' />
+          <map key='[ProductStyle (AdventureWorks_Products.csv1)]' value='[AdventureWorks_Products.csv1].[ProductStyle]' />
+          <map key='[ProductStyle]' value='[AdventureWorks_Products.csv].[ProductStyle]' />
+          <map key='[ProductSubcategoryKey (AdventureWorks_Products.csv1)]' value='[AdventureWorks_Products.csv1].[ProductSubcategoryKey]' />
+          <map key='[ProductSubcategoryKey]' value='[AdventureWorks_Products.csv].[ProductSubcategoryKey]' />
+          <map key='[StockDate (AdventureWorks_Sales_2016.csv)]' value='[AdventureWorks_Sales_2016.csv].[StockDate]' />
+          <map key='[StockDate (AdventureWorks_Sales_2017.csv)]' value='[AdventureWorks_Sales_2017.csv].[StockDate]' />
+          <map key='[StockDate]' value='[AdventureWorks_Sales_2015.csv].[StockDate]' />
+          <map key='[TerritoryKey (AdventureWorks_Sales_2016.csv)]' value='[AdventureWorks_Sales_2016.csv].[TerritoryKey]' />
+          <map key='[TerritoryKey (AdventureWorks_Sales_2017.csv)]' value='[AdventureWorks_Sales_2017.csv].[TerritoryKey]' />
+          <map key='[TerritoryKey]' value='[AdventureWorks_Sales_2015.csv].[TerritoryKey]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[AdventureWorks_Products.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[AdventureWorks_Products.csv1]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[AdventureWorks_Sales_2015.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[AdventureWorks_Sales_2016.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[AdventureWorks_Sales_2017.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductKey</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ProductKey]</local-name>
+            <parent-name>[AdventureWorks_Products.csv]</parent-name>
+            <remote-alias>ProductKey</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductSubcategoryKey</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ProductSubcategoryKey]</local-name>
+            <parent-name>[AdventureWorks_Products.csv]</parent-name>
+            <remote-alias>ProductSubcategoryKey</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductSKU</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ProductSKU]</local-name>
+            <parent-name>[AdventureWorks_Products.csv]</parent-name>
+            <remote-alias>ProductSKU</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ProductName]</local-name>
+            <parent-name>[AdventureWorks_Products.csv]</parent-name>
+            <remote-alias>ProductName</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ModelName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ModelName]</local-name>
+            <parent-name>[AdventureWorks_Products.csv]</parent-name>
+            <remote-alias>ModelName</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductDescription</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ProductDescription]</local-name>
+            <parent-name>[AdventureWorks_Products.csv]</parent-name>
+            <remote-alias>ProductDescription</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductColor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ProductColor]</local-name>
+            <parent-name>[AdventureWorks_Products.csv]</parent-name>
+            <remote-alias>ProductColor</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductSize</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ProductSize]</local-name>
+            <parent-name>[AdventureWorks_Products.csv]</parent-name>
+            <remote-alias>ProductSize</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductStyle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ProductStyle]</local-name>
+            <parent-name>[AdventureWorks_Products.csv]</parent-name>
+            <remote-alias>ProductStyle</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductCost</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ProductCost]</local-name>
+            <parent-name>[AdventureWorks_Products.csv]</parent-name>
+            <remote-alias>ProductCost</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductPrice</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ProductPrice]</local-name>
+            <parent-name>[AdventureWorks_Products.csv]</parent-name>
+            <remote-alias>ProductPrice</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductKey</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ProductKey (AdventureWorks_Products.csv1)]</local-name>
+            <parent-name>[AdventureWorks_Products.csv1]</parent-name>
+            <remote-alias>ProductKey</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductSubcategoryKey</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ProductSubcategoryKey (AdventureWorks_Products.csv1)]</local-name>
+            <parent-name>[AdventureWorks_Products.csv1]</parent-name>
+            <remote-alias>ProductSubcategoryKey</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductSKU</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ProductSKU (AdventureWorks_Products.csv1)]</local-name>
+            <parent-name>[AdventureWorks_Products.csv1]</parent-name>
+            <remote-alias>ProductSKU</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ProductName (AdventureWorks_Products.csv1)]</local-name>
+            <parent-name>[AdventureWorks_Products.csv1]</parent-name>
+            <remote-alias>ProductName</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ModelName</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ModelName (AdventureWorks_Products.csv1)]</local-name>
+            <parent-name>[AdventureWorks_Products.csv1]</parent-name>
+            <remote-alias>ModelName</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductDescription</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ProductDescription (AdventureWorks_Products.csv1)]</local-name>
+            <parent-name>[AdventureWorks_Products.csv1]</parent-name>
+            <remote-alias>ProductDescription</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductColor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ProductColor (AdventureWorks_Products.csv1)]</local-name>
+            <parent-name>[AdventureWorks_Products.csv1]</parent-name>
+            <remote-alias>ProductColor</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductSize</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ProductSize (AdventureWorks_Products.csv1)]</local-name>
+            <parent-name>[AdventureWorks_Products.csv1]</parent-name>
+            <remote-alias>ProductSize</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductStyle</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ProductStyle (AdventureWorks_Products.csv1)]</local-name>
+            <parent-name>[AdventureWorks_Products.csv1]</parent-name>
+            <remote-alias>ProductStyle</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductCost</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ProductCost (AdventureWorks_Products.csv1)]</local-name>
+            <parent-name>[AdventureWorks_Products.csv1]</parent-name>
+            <remote-alias>ProductCost</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductPrice</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ProductPrice (AdventureWorks_Products.csv1)]</local-name>
+            <parent-name>[AdventureWorks_Products.csv1]</parent-name>
+            <remote-alias>ProductPrice</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OrderDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[OrderDate]</local-name>
+            <parent-name>[AdventureWorks_Sales_2015.csv]</parent-name>
+            <remote-alias>OrderDate</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2015.csv_9C0B71F6894A40829D203E5FC11C6A91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StockDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[StockDate]</local-name>
+            <parent-name>[AdventureWorks_Sales_2015.csv]</parent-name>
+            <remote-alias>StockDate</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2015.csv_9C0B71F6894A40829D203E5FC11C6A91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OrderNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OrderNumber]</local-name>
+            <parent-name>[AdventureWorks_Sales_2015.csv]</parent-name>
+            <remote-alias>OrderNumber</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2015.csv_9C0B71F6894A40829D203E5FC11C6A91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductKey</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ProductKey (AdventureWorks_Sales_2015.csv)]</local-name>
+            <parent-name>[AdventureWorks_Sales_2015.csv]</parent-name>
+            <remote-alias>ProductKey</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2015.csv_9C0B71F6894A40829D203E5FC11C6A91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CustomerKey</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CustomerKey]</local-name>
+            <parent-name>[AdventureWorks_Sales_2015.csv]</parent-name>
+            <remote-alias>CustomerKey</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2015.csv_9C0B71F6894A40829D203E5FC11C6A91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TerritoryKey</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TerritoryKey]</local-name>
+            <parent-name>[AdventureWorks_Sales_2015.csv]</parent-name>
+            <remote-alias>TerritoryKey</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2015.csv_9C0B71F6894A40829D203E5FC11C6A91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OrderLineItem</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OrderLineItem]</local-name>
+            <parent-name>[AdventureWorks_Sales_2015.csv]</parent-name>
+            <remote-alias>OrderLineItem</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2015.csv_9C0B71F6894A40829D203E5FC11C6A91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OrderQuantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OrderQuantity]</local-name>
+            <parent-name>[AdventureWorks_Sales_2015.csv]</parent-name>
+            <remote-alias>OrderQuantity</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2015.csv_9C0B71F6894A40829D203E5FC11C6A91]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OrderDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[OrderDate (AdventureWorks_Sales_2016.csv)]</local-name>
+            <parent-name>[AdventureWorks_Sales_2016.csv]</parent-name>
+            <remote-alias>OrderDate</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2016.csv_0CA5FAC97BF24A04BC44F002D90946C2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StockDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[StockDate (AdventureWorks_Sales_2016.csv)]</local-name>
+            <parent-name>[AdventureWorks_Sales_2016.csv]</parent-name>
+            <remote-alias>StockDate</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2016.csv_0CA5FAC97BF24A04BC44F002D90946C2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OrderNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OrderNumber (AdventureWorks_Sales_2016.csv)]</local-name>
+            <parent-name>[AdventureWorks_Sales_2016.csv]</parent-name>
+            <remote-alias>OrderNumber</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2016.csv_0CA5FAC97BF24A04BC44F002D90946C2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductKey</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ProductKey (AdventureWorks_Sales_2016.csv)]</local-name>
+            <parent-name>[AdventureWorks_Sales_2016.csv]</parent-name>
+            <remote-alias>ProductKey</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2016.csv_0CA5FAC97BF24A04BC44F002D90946C2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CustomerKey</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CustomerKey (AdventureWorks_Sales_2016.csv)]</local-name>
+            <parent-name>[AdventureWorks_Sales_2016.csv]</parent-name>
+            <remote-alias>CustomerKey</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2016.csv_0CA5FAC97BF24A04BC44F002D90946C2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TerritoryKey</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TerritoryKey (AdventureWorks_Sales_2016.csv)]</local-name>
+            <parent-name>[AdventureWorks_Sales_2016.csv]</parent-name>
+            <remote-alias>TerritoryKey</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2016.csv_0CA5FAC97BF24A04BC44F002D90946C2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OrderLineItem</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OrderLineItem (AdventureWorks_Sales_2016.csv)]</local-name>
+            <parent-name>[AdventureWorks_Sales_2016.csv]</parent-name>
+            <remote-alias>OrderLineItem</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2016.csv_0CA5FAC97BF24A04BC44F002D90946C2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OrderQuantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OrderQuantity (AdventureWorks_Sales_2016.csv)]</local-name>
+            <parent-name>[AdventureWorks_Sales_2016.csv]</parent-name>
+            <remote-alias>OrderQuantity</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2016.csv_0CA5FAC97BF24A04BC44F002D90946C2]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OrderDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[OrderDate (AdventureWorks_Sales_2017.csv)]</local-name>
+            <parent-name>[AdventureWorks_Sales_2017.csv]</parent-name>
+            <remote-alias>OrderDate</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2017.csv_340E852BB96948F680D6EC75E1A7F465]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StockDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[StockDate (AdventureWorks_Sales_2017.csv)]</local-name>
+            <parent-name>[AdventureWorks_Sales_2017.csv]</parent-name>
+            <remote-alias>StockDate</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2017.csv_340E852BB96948F680D6EC75E1A7F465]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OrderNumber</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OrderNumber (AdventureWorks_Sales_2017.csv)]</local-name>
+            <parent-name>[AdventureWorks_Sales_2017.csv]</parent-name>
+            <remote-alias>OrderNumber</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2017.csv_340E852BB96948F680D6EC75E1A7F465]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ProductKey</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ProductKey (AdventureWorks_Sales_2017.csv)]</local-name>
+            <parent-name>[AdventureWorks_Sales_2017.csv]</parent-name>
+            <remote-alias>ProductKey</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2017.csv_340E852BB96948F680D6EC75E1A7F465]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CustomerKey</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CustomerKey (AdventureWorks_Sales_2017.csv)]</local-name>
+            <parent-name>[AdventureWorks_Sales_2017.csv]</parent-name>
+            <remote-alias>CustomerKey</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2017.csv_340E852BB96948F680D6EC75E1A7F465]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TerritoryKey</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TerritoryKey (AdventureWorks_Sales_2017.csv)]</local-name>
+            <parent-name>[AdventureWorks_Sales_2017.csv]</parent-name>
+            <remote-alias>TerritoryKey</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2017.csv_340E852BB96948F680D6EC75E1A7F465]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OrderLineItem</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OrderLineItem (AdventureWorks_Sales_2017.csv)]</local-name>
+            <parent-name>[AdventureWorks_Sales_2017.csv]</parent-name>
+            <remote-alias>OrderLineItem</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2017.csv_340E852BB96948F680D6EC75E1A7F465]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OrderQuantity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[OrderQuantity (AdventureWorks_Sales_2017.csv)]</local-name>
+            <parent-name>[AdventureWorks_Sales_2017.csv]</parent-name>
+            <remote-alias>OrderQuantity</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[AdventureWorks_Sales_2017.csv_340E852BB96948F680D6EC75E1A7F465]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='maximum product price' datatype='real' name='[Calculation_863565277677563906]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MAX([ProductPrice])' />
+      </column>
+      <column caption='min product prize' datatype='real' name='[Calculation_863565277677936643]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MIN([ProductPrice])' />
+      </column>
+      <column caption='CustomerKey (AdventureWorks Sales 2016.csv)' datatype='integer' name='[CustomerKey (AdventureWorks_Sales_2016.csv)]' role='dimension' type='ordinal' />
+      <column caption='CustomerKey (AdventureWorks Sales 2017.csv)' datatype='integer' name='[CustomerKey (AdventureWorks_Sales_2017.csv)]' role='dimension' type='ordinal' />
+      <column caption='Customer Key' datatype='integer' name='[CustomerKey]' role='dimension' type='ordinal' />
+      <column caption='ModelName (AdventureWorks Products.csv1)' datatype='string' name='[ModelName (AdventureWorks_Products.csv1)]' role='dimension' type='nominal' />
+      <column caption='Model Name' datatype='string' name='[ModelName]' role='dimension' type='nominal' />
+      <column caption='OrderDate (AdventureWorks Sales 2016.csv)' datatype='date' name='[OrderDate (AdventureWorks_Sales_2016.csv)]' role='dimension' type='ordinal' />
+      <column caption='OrderDate (AdventureWorks Sales 2017.csv)' datatype='date' name='[OrderDate (AdventureWorks_Sales_2017.csv)]' role='dimension' type='ordinal' />
+      <column caption='Order Date' datatype='date' name='[OrderDate]' role='dimension' type='ordinal' />
+      <column caption='OrderLineItem (AdventureWorks Sales 2016.csv)' datatype='integer' name='[OrderLineItem (AdventureWorks_Sales_2016.csv)]' role='measure' type='quantitative' />
+      <column caption='OrderLineItem (AdventureWorks Sales 2017.csv)' datatype='integer' name='[OrderLineItem (AdventureWorks_Sales_2017.csv)]' role='measure' type='quantitative' />
+      <column caption='Order Line Item' datatype='integer' name='[OrderLineItem]' role='measure' type='quantitative' />
+      <column caption='OrderNumber (AdventureWorks Sales 2016.csv)' datatype='string' name='[OrderNumber (AdventureWorks_Sales_2016.csv)]' role='dimension' type='nominal' />
+      <column caption='OrderNumber (AdventureWorks Sales 2017.csv)' datatype='string' name='[OrderNumber (AdventureWorks_Sales_2017.csv)]' role='dimension' type='nominal' />
+      <column caption='Order Number' datatype='string' name='[OrderNumber]' role='dimension' type='nominal' />
+      <column caption='OrderQuantity (AdventureWorks Sales 2016.csv)' datatype='integer' name='[OrderQuantity (AdventureWorks_Sales_2016.csv)]' role='measure' type='quantitative' />
+      <column caption='OrderQuantity (AdventureWorks Sales 2017.csv)' datatype='integer' name='[OrderQuantity (AdventureWorks_Sales_2017.csv)]' role='measure' type='quantitative' />
+      <column caption='Order Quantity' datatype='integer' name='[OrderQuantity]' role='measure' type='quantitative' />
+      <column caption='ProductColor (AdventureWorks Products.csv1)' datatype='string' name='[ProductColor (AdventureWorks_Products.csv1)]' role='dimension' type='nominal' />
+      <column caption='Product Color' datatype='string' name='[ProductColor]' role='dimension' type='nominal' />
+      <column caption='ProductCost (AdventureWorks Products.csv1)' datatype='real' name='[ProductCost (AdventureWorks_Products.csv1)]' role='measure' type='quantitative' />
+      <column caption='Product Cost' datatype='real' name='[ProductCost]' role='measure' type='quantitative' />
+      <column caption='ProductDescription (AdventureWorks Products.csv1)' datatype='string' name='[ProductDescription (AdventureWorks_Products.csv1)]' role='dimension' type='nominal' />
+      <column caption='Product Description' datatype='string' name='[ProductDescription]' role='dimension' type='nominal' />
+      <column caption='ProductKey (AdventureWorks Products.csv1)' datatype='integer' name='[ProductKey (AdventureWorks_Products.csv1)]' role='dimension' type='ordinal' />
+      <column caption='ProductKey (AdventureWorks Sales 2015.csv)' datatype='integer' name='[ProductKey (AdventureWorks_Sales_2015.csv)]' role='dimension' type='ordinal' />
+      <column caption='ProductKey (AdventureWorks Sales 2016.csv)' datatype='integer' name='[ProductKey (AdventureWorks_Sales_2016.csv)]' role='dimension' type='ordinal' />
+      <column caption='ProductKey (AdventureWorks Sales 2017.csv)' datatype='integer' name='[ProductKey (AdventureWorks_Sales_2017.csv)]' role='dimension' type='ordinal' />
+      <column caption='Product Key' datatype='integer' name='[ProductKey]' role='dimension' type='ordinal' />
+      <column caption='ProductName (AdventureWorks Products.csv1)' datatype='string' name='[ProductName (AdventureWorks_Products.csv1)]' role='dimension' type='nominal' />
+      <column caption='Product Name' datatype='string' name='[ProductName]' role='dimension' type='nominal' />
+      <column caption='ProductPrice (AdventureWorks Products.csv1)' datatype='real' name='[ProductPrice (AdventureWorks_Products.csv1)]' role='measure' type='quantitative' />
+      <column caption='Product Price' datatype='real' name='[ProductPrice]' role='measure' type='quantitative' />
+      <column caption='ProductSKU (AdventureWorks Products.csv1)' datatype='string' name='[ProductSKU (AdventureWorks_Products.csv1)]' role='dimension' type='nominal' />
+      <column caption='Product SKU' datatype='string' name='[ProductSKU]' role='dimension' type='nominal' />
+      <column caption='ProductSize (AdventureWorks Products.csv1)' datatype='string' name='[ProductSize (AdventureWorks_Products.csv1)]' role='dimension' type='nominal' />
+      <column caption='Product Size' datatype='string' name='[ProductSize]' role='dimension' type='nominal' />
+      <column caption='ProductStyle (AdventureWorks Products.csv1)' datatype='string' name='[ProductStyle (AdventureWorks_Products.csv1)]' role='dimension' type='nominal' />
+      <column caption='Product Style' datatype='string' name='[ProductStyle]' role='dimension' type='nominal' />
+      <column caption='ProductSubcategoryKey (AdventureWorks Products.csv1)' datatype='integer' name='[ProductSubcategoryKey (AdventureWorks_Products.csv1)]' role='dimension' type='ordinal' />
+      <column caption='Product Subcategory Key' datatype='integer' name='[ProductSubcategoryKey]' role='dimension' type='ordinal' />
+      <column caption='StockDate (AdventureWorks Sales 2016.csv)' datatype='date' name='[StockDate (AdventureWorks_Sales_2016.csv)]' role='dimension' type='ordinal' />
+      <column caption='StockDate (AdventureWorks Sales 2017.csv)' datatype='date' name='[StockDate (AdventureWorks_Sales_2017.csv)]' role='dimension' type='ordinal' />
+      <column caption='Stock Date' datatype='date' name='[StockDate]' role='dimension' type='ordinal' />
+      <column caption='TerritoryKey (AdventureWorks Sales 2016.csv)' datatype='integer' name='[TerritoryKey (AdventureWorks_Sales_2016.csv)]' role='dimension' type='ordinal' />
+      <column caption='TerritoryKey (AdventureWorks Sales 2017.csv)' datatype='integer' name='[TerritoryKey (AdventureWorks_Sales_2017.csv)]' role='dimension' type='ordinal' />
+      <column caption='Territory Key' datatype='integer' name='[TerritoryKey]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='AdventureWorks_Products.csv' datatype='table' name='[__tableau_internal_object_id__].[AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='AdventureWorks_Sales_2015.csv' datatype='table' name='[__tableau_internal_object_id__].[AdventureWorks_Sales_2015.csv_9C0B71F6894A40829D203E5FC11C6A91]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='AdventureWorks_Sales_2016.csv' datatype='table' name='[__tableau_internal_object_id__].[AdventureWorks_Sales_2016.csv_0CA5FAC97BF24A04BC44F002D90946C2]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='AdventureWorks_Sales_2017.csv' datatype='table' name='[__tableau_internal_object_id__].[AdventureWorks_Sales_2017.csv_340E852BB96948F680D6EC75E1A7F465]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='AdventureWorks_Products.csv' id='AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5'>
+            <properties context=''>
+              <relation join='inner' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[AdventureWorks_Products.csv].[ProductSubcategoryKey]' />
+                    <expression op='[AdventureWorks_Products.csv1].[ProductSubcategoryKey]' />
+                  </expression>
+                </clause>
+                <relation connection='textscan.0lb6ogw0fpntah1c0qk3z053liky' name='AdventureWorks_Products.csv' table='[AdventureWorks_Products#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='integer' name='ProductKey' ordinal='0' />
+                    <column datatype='integer' name='ProductSubcategoryKey' ordinal='1' />
+                    <column datatype='string' name='ProductSKU' ordinal='2' />
+                    <column datatype='string' name='ProductName' ordinal='3' />
+                    <column datatype='string' name='ModelName' ordinal='4' />
+                    <column datatype='string' name='ProductDescription' ordinal='5' />
+                    <column datatype='string' name='ProductColor' ordinal='6' />
+                    <column datatype='string' name='ProductSize' ordinal='7' />
+                    <column datatype='string' name='ProductStyle' ordinal='8' />
+                    <column datatype='real' name='ProductCost' ordinal='9' />
+                    <column datatype='real' name='ProductPrice' ordinal='10' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.0lb6ogw0fpntah1c0qk3z053liky' name='AdventureWorks_Products.csv1' table='[AdventureWorks_Products#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                    <column datatype='integer' name='ProductKey' ordinal='0' />
+                    <column datatype='integer' name='ProductSubcategoryKey' ordinal='1' />
+                    <column datatype='string' name='ProductSKU' ordinal='2' />
+                    <column datatype='string' name='ProductName' ordinal='3' />
+                    <column datatype='string' name='ModelName' ordinal='4' />
+                    <column datatype='string' name='ProductDescription' ordinal='5' />
+                    <column datatype='string' name='ProductColor' ordinal='6' />
+                    <column datatype='string' name='ProductSize' ordinal='7' />
+                    <column datatype='string' name='ProductStyle' ordinal='8' />
+                    <column datatype='real' name='ProductCost' ordinal='9' />
+                    <column datatype='real' name='ProductPrice' ordinal='10' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+          <object caption='AdventureWorks_Sales_2015.csv' id='AdventureWorks_Sales_2015.csv_9C0B71F6894A40829D203E5FC11C6A91'>
+            <properties context=''>
+              <relation connection='textscan.0lb6ogw0fpntah1c0qk3z053liky' name='AdventureWorks_Sales_2015.csv' table='[AdventureWorks_Sales_2015#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='OrderDate' ordinal='0' />
+                  <column datatype='date' name='StockDate' ordinal='1' />
+                  <column datatype='string' name='OrderNumber' ordinal='2' />
+                  <column datatype='integer' name='ProductKey' ordinal='3' />
+                  <column datatype='integer' name='CustomerKey' ordinal='4' />
+                  <column datatype='integer' name='TerritoryKey' ordinal='5' />
+                  <column datatype='integer' name='OrderLineItem' ordinal='6' />
+                  <column datatype='integer' name='OrderQuantity' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='AdventureWorks_Sales_2016.csv' id='AdventureWorks_Sales_2016.csv_0CA5FAC97BF24A04BC44F002D90946C2'>
+            <properties context=''>
+              <relation connection='textscan.0lb6ogw0fpntah1c0qk3z053liky' name='AdventureWorks_Sales_2016.csv' table='[AdventureWorks_Sales_2016#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='OrderDate' ordinal='0' />
+                  <column datatype='date' name='StockDate' ordinal='1' />
+                  <column datatype='string' name='OrderNumber' ordinal='2' />
+                  <column datatype='integer' name='ProductKey' ordinal='3' />
+                  <column datatype='integer' name='CustomerKey' ordinal='4' />
+                  <column datatype='integer' name='TerritoryKey' ordinal='5' />
+                  <column datatype='integer' name='OrderLineItem' ordinal='6' />
+                  <column datatype='integer' name='OrderQuantity' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+          <object caption='AdventureWorks_Sales_2017.csv' id='AdventureWorks_Sales_2017.csv_340E852BB96948F680D6EC75E1A7F465'>
+            <properties context=''>
+              <relation connection='textscan.0lb6ogw0fpntah1c0qk3z053liky' name='AdventureWorks_Sales_2017.csv' table='[AdventureWorks_Sales_2017#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='date' name='OrderDate' ordinal='0' />
+                  <column datatype='date' name='StockDate' ordinal='1' />
+                  <column datatype='string' name='OrderNumber' ordinal='2' />
+                  <column datatype='integer' name='ProductKey' ordinal='3' />
+                  <column datatype='integer' name='CustomerKey' ordinal='4' />
+                  <column datatype='integer' name='TerritoryKey' ordinal='5' />
+                  <column datatype='integer' name='OrderLineItem' ordinal='6' />
+                  <column datatype='integer' name='OrderQuantity' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[ProductKey]' />
+              <expression op='[ProductKey (AdventureWorks_Sales_2015.csv)]' />
+            </expression>
+            <first-end-point object-id='AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5' />
+            <second-end-point object-id='AdventureWorks_Sales_2015.csv_9C0B71F6894A40829D203E5FC11C6A91' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[ProductKey]' />
+              <expression op='[ProductKey (AdventureWorks_Sales_2016.csv)]' />
+            </expression>
+            <first-end-point object-id='AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5' />
+            <second-end-point object-id='AdventureWorks_Sales_2016.csv_0CA5FAC97BF24A04BC44F002D90946C2' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[ProductKey]' />
+              <expression op='[ProductKey (AdventureWorks_Sales_2017.csv)]' />
+            </expression>
+            <first-end-point object-id='AdventureWorks_Products.csv_ED57FFD7AED740DA88969C366ED17AC5' />
+            <second-end-point object-id='AdventureWorks_Sales_2017.csv_340E852BB96948F680D6EC75E1A7F465' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='AdventureWorks_Customers+' name='federated.1muz2pg08fknqy1ezt5mp13o6r1r' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1muz2pg08fknqy1ezt5mp13o6r1r'>
+            <column caption='min product prize' datatype='real' name='[Calculation_863565277677936643]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='MIN([ProductPrice])' />
+            </column>
+            <column caption='Product Price' datatype='real' name='[ProductPrice]' role='measure' type='quantitative' />
+            <column caption='Product Style' datatype='string' name='[ProductStyle]' role='dimension' type='nominal' />
+            <column-instance column='[ProductPrice]' derivation='Avg' name='[avg:ProductPrice:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ProductStyle]' derivation='None' name='[none:ProductStyle:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_863565277677936643]' derivation='User' name='[usr:Calculation_863565277677936643:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1muz2pg08fknqy1ezt5mp13o6r1r].[usr:Calculation_863565277677936643:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#f2eaf2</color>
+                <color>#f3e3f3</color>
+                <color>#f5dcf5</color>
+                <color>#f6d5f6</color>
+                <color>#f8cef8</color>
+                <color>#f9c7f9</color>
+                <color>#fac0fa</color>
+                <color>#fcb8fc</color>
+                <color>#fdb1fd</color>
+                <color>#ffaaff</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1muz2pg08fknqy1ezt5mp13o6r1r].[usr:Calculation_863565277677936643:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1muz2pg08fknqy1ezt5mp13o6r1r].[avg:ProductPrice:qk]</rows>
+        <cols>[federated.1muz2pg08fknqy1ezt5mp13o6r1r].[none:ProductStyle:nk]</cols>
+      </table>
+      <simple-id uuid='{8CB3CAF1-79AD-481B-9957-D297B5E46104}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1muz2pg08fknqy1ezt5mp13o6r1r].[usr:Calculation_863565277677936643:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1muz2pg08fknqy1ezt5mp13o6r1r].[none:ModelName:nk]</field>
+            <field>[federated.1muz2pg08fknqy1ezt5mp13o6r1r].[none:ProductName:nk]</field>
+            <field>[federated.1muz2pg08fknqy1ezt5mp13o6r1r].[none:ProductStyle:nk]</field>
+            <field>[federated.1muz2pg08fknqy1ezt5mp13o6r1r].[none:ProductSubcategoryKey (AdventureWorks_Products.csv1):ok]</field>
+            <field>[federated.1muz2pg08fknqy1ezt5mp13o6r1r].[usr:Calculation_863565277677936643:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A8D2C6ED-7268-4C75-A696-5EB6306D1428}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      CvcAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
